@@ -6,7 +6,7 @@ const chromeOptions = {
  };
 
 
-(async () => {
+(async function () {
     try{
         const browser = await puppeteer.launch(chromeOptions);
         const page = await browser.newPage();
